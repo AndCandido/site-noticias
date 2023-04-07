@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    background-color: #e6e6e6;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    justify-content: space-between;
+    padding: 30px 55px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.header .cont-navegation {
+    margin-left: 40px;
+    flex-grow: 2;
+}
+
+.header .nav-list {
+    list-style: none;
+    gap: 5px;
+}
+
+.header .nav-list a {
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.header .nav-list a:hover {
+    background-color: #555;
+}
+
+.header .form-search input, .header .form-search button {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    border: none;
+}
+.header .form-search input {
+    outline: none;
+    width: 240px;
+    margin-right: 10px;
+}
+
+.header .form-search button {
+    background-color: #404aa5;
+    color: #fff;
+}
+
+.cont-news {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 25px;
+}
+
+.cont-news .news {
+    flex-direction: column;
+    align-items: start;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #3333;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.cont-news .cont-content-news {
+    flex-grow: 2;
+}
+
+.cont-news .cont-created-news {
+    align-self: flex-end;
+    color: #0009;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.cont-form-add-news {
+    width: max-content;
+    margin: 30px auto;
+    box-shadow: 0px 0px 5px #2225;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.div-error {
+    padding: 10px;
+    border: 4px solid #f33;
+    background-color: #ff8888;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-add-news {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 1.5em;
+}
+
+.form-add-news label {
+    margin-top: 10px;
+}
+
+.form-add-news input, .form-add-news textarea {
+    font-size: 20px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3335;
+    outline: none;
+}
+
+.form-add-news button {
+    background-color: #2a3ef5;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: inherit;
+    margin: 15px 10px 0 0;
+    align-self: flex-end;
+}

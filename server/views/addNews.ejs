@@ -1,0 +1,16 @@
+<%- include('./includes/header') %>
+
+<section class="cont-form-add-news">
+    <form class="container form-add-news" action="/addNews/register" method="post">
+        <label for="">Título da notícia</label>
+        <input type="text" name="news">
+        <label for="">Categoria</label>
+        <input type="text" name="category">
+        <label for="">Conteúdo</label>
+        <textarea name="content"cols="30" rows="10" style="resize: none"></textarea>
+        <button>Adicionar</button>
+    </form>
+</section>
+
+<script src="js/validateFields.js"></script>
+<%- include('./includes/footer') %>

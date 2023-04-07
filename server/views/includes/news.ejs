@@ -1,0 +1,20 @@
+<% if(news.length > 0) { %>
+    <% news.forEach(e => { %>
+        <div class="container news">
+            <section class="cont-title-news">
+                <h2><%= e.news %></h2>
+            </section>
+            <section class="cont-category-news">
+                <h3><%= e.category %></h4>
+            </section>
+            <section class="cont-content-news">
+                <p><%= e.content %></p>
+            </section>
+            <section class="cont-created-news">
+                <span>Data de publicação: <%= e.created_date %></span>
+            </section>
+        </div>
+    <% }) %>
+<% } else { %>
+    <h3>Não há notícias cadastradas. <a href="/addNews">Cadastrar</a></h3>
+<% } %>
